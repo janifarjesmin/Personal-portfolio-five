@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.517), rgba(0, 0, 0, 0.53)), url(image/village-of-chios-emmanouil-klimis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    height: 100vh;
+    cursor: grab;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.033);
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+.nav-container h3{
+    font-size: 30px;
+    color: white;
+    margin-left: 50px; 
+}
+.nav-container span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff9900;
+}
+nav ul{
+    display: flex;
+    margin-left: 200px;
+    list-style-type: none;
+}
+nav ul li{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-right: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 5px 5px;
+    transition: 0.3s ease;
+}
+nav ul li a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    background-color: #ff9900;
+    transition: 0.3s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;   
+}
+nav ul li a:hover, nav ul li a.active{
+    color: #ff9900;
+    border-bottom: 2px solid #ff9900;
+}
+.nav-container button{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 120px;
+    letter-spacing: 2px;
+    padding: 20px 35px;
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.nav-container button:hover{
+    background-color: rgba(0, 0, 0, 0.033);
+    color: white;
+}
+
+/* hero area code  */
+
+.hero-area{
+    text-align: center;
+    margin-top: 110px;
+}
+.hero-area h4{
+    color: white;
+}
+.hero-area h2{
+    font-size: 100px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: white;
+}
+.hero-area h5{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+.hero-area a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+}
+
+/* first section code start  */
+
+.first-section-container{
+    width: 1300px;
+    margin: 100px auto;
+}
+.first-section-wrapper{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.first-section-img{
+    width: 300px;
+}
+.first-section-img img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.first-section-text{
+    text-align: center;
+    margin: 60px 20px 0 20px;
+}
+.first-section-text h4{
+    color: #ECD03F;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.first-section-text h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.first-section-text p{
+    font-family: 'Satisfy', cursive;  
+    font-size: 19px;
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+}
+.first-section-text button{
+    padding: 17px 20px;
+    letter-spacing: 2px;
+    background-color: #ECD03F;
+    color: white;
+    border: 2px solid #ECD03F;
+    transition: 0.3s ease;
+}
+.first-section-text button:hover{
+    background-color: white;
+    color: #ECD03F;
+    font-weight: bold;
+}
+
+/* first parallex section code start  */
+
+#first-parallex{
+    background-image: url(image/longfellows-resturant-saratoga-springs-ny-mary-curtis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+    margin-bottom: 100px;
+}
+.parallex-div{
+    text-align: center;
+    padding-top: 130px;
+    color: white;
+}
+.parallex-div h4{
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.parallex-div h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+/* third section code start  */
+
+.third-section{
+    width: 1300px;
+    margin: auto;
+}
+.third-section-wrapper{
+    text-align: center;
+}
+.third-section-wrapper h4{
+    letter-spacing: 2px;
+    color: #ECD03F;
+    margin-bottom: 30px;
+}
+.third-section-wrapper h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.third-section-wrapper p{
+   line-height: 1.7rem;
+   margin-bottom: 50px;
+}
+.third-section-list ul{
+    display: flex;
+}
+.third-section-list ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    transform: translateX(350px);
+    margin-bottom: 50px;
+}
+.third-section-list ul li a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+.third-section-list ul li a:hover, .third-section-list ul li a.active{
+    color: #ECD03F;
+}
+.third-section-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.third-section-singleitems{
+    width: 625px;
+}
+.content{
+    margin: 30px 0;
+}
+.content h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.content .span-1{
+    margin-left: 385px;
+}
+.content .span-2{
+    margin-left: 335px;
+}
+.content .span-3{
+    margin-left: 380px;
+}
+.content .span-4{
+    margin-left: 415px;
+}
+.content .span-5{
+    margin-left: 345px;
+}
+.content .span-6{
+    margin-left: 383px;
+}
+.content .span-7{
+    margin-left: 415px;
+}
+.content .span-8{
+    margin-left: 375px;
+}
+
+/* second parallex section code start  */
+
+#second-parallex{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.513), rgba(0, 0, 0, 0.578)), url(image/best-resturant-in-town-thomas-todd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+    margin-bottom: 100px;
+}
+.second-para-div{
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+}
+.second-para-div h5{
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.second-para-div h3{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+/* five section code start  */
+
+.section-five{
+    width: 1350px;
+    margin: auto;
+}
+.five-section-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.five-section-text{
+   text-align: center;
+   margin-top: 60px;
+}
+.five-section-text h5{
+    letter-spacing: 2px;
+    color: #ECD03F;
+    margin-bottom: 25px;
+}
+.five-section-text h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.five-section-text p{
+    font-family: 'Satisfy', cursive; 
+    font-size: 22px; 
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.five-section-text button{
+    padding: 18px 38px;
+    background-color: #ECD03F;
+    border: 2px solid #ECD03F;
+    color: white;
+    transition: 0.3s ease;
+}
+.five-section-text button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #ECD03F;
+}
+.five-section-img{
+    display: flex;
+    gap: 25px;
+}
+.five-section-img .image-1{
+    width: 315px;
+}
+.image-1 img{
+    width: 100%;
+    height: 460px;
+}
+
+/* third parallex section code  */
+
+#third-parallex{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.423), rgba(0, 0, 0, 0.657)), url(image/italian-dish-tom-gowanlock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 85vh;
+    margin-bottom: 100px;
+}
+.third-para-container{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 110px;
+}
+.third-para-container h4{
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 30px;
+}
+.third-para-container h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 50px;
+}
+.third-para-container p{
+    color: white;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;  
+}
+
+footer{
+    background-color: black;
+    padding: 50px 0;
+}
+.footer-div{
+   width: 1200px;
+   margin: auto;
+}
+.footer-parent{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+}
+.footer-text{
+    width: 600px;
+    text-align: center;
+}
+.footer-text h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.footer-text p{
+    font-family: 'Satisfy', cursive;  
+    margin: 0 40px;
+}
+.footer-text span{
+    font-family: 'Satisfy', cursive;  
+    font-size: 16px;
+    color: #ECD03F;
+}
+.footer-copy{
+    margin-top: 30px;
+}
+.footer-copy p{
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 40px;  
+}
+.footer-copy h4{
+    font-size: 20px;
+}
